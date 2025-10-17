@@ -158,6 +158,8 @@ This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE
 ---
 
 ## 🙋‍♂️ Contact
+For questions or collaborations, please contact:
+Xiaoyu Bai – qtdv4019@leeds.ac.uk
 Project Link: [[https://github.com/](https://github.com/your-username/Clangd-AutoFix)](https://github.com/yuzueda/yuzueda.github.io)
 
 ---
@@ -165,3 +167,8 @@ Project Link: [[https://github.com/](https://github.com/your-username/Clangd-Aut
 ## 💡 Note on Real-World Dataset
 
 The real-world code dataset used in our evaluation contains proprietary code from industrial partners and cannot be publicly distributed. However, the `error-inject.ipynb` notebook provides a methodology for researchers to create similar test cases from their own C++ codebases.
+
+## 🚧 Future Work & Call for Suggestions
+Thank you for reading this far! I am currently working on improving the repair of very long code files that exceed the context window of large language models. The current approach involves code chunking and partial parallelization to increase the repair rate and reduce latency.
+
+If you have any ideas or suggestions, please feel free to comment or contact me! This project is still ongoing and will be continuously updated. The goal is to perfect it by the time I turn 100! 😄
