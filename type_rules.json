@@ -1,0 +1,25 @@
+{
+    "type_rules": [
+      {
+        "description": "匹配指针声明中赋值0，比如：\"int *ptr = 0;\"",
+        "pattern": "(\\b\\w+\\s*\\*\\s*\\w+\\s*=\\s*)0\\b",
+        "replacement": "$1nullptr"
+      },
+      {
+        "description": "匹配直接使用*变量赋值0的情形，比如：\"*ptr = 0;\"",
+        "pattern": "(\\*\\s*\\w+\\s*=\\s*)0\\b",
+        "replacement": "$1nullptr"
+      },
+      {
+        "description": "匹配指针声明中赋值长整型零（0L 或 0LL），例如：\"int *ptr = 0L;\"",
+        "pattern": "(\\b\\w+\\s*\\*\\s*\\w+\\s*=\\s*)0L{1,2}\\b",
+        "replacement": "$1nullptr"
+      },
+      {
+        "description": "匹配所有单独出现的NULL，替换为nullptr",
+        "pattern": "\\bNULL\\b",
+        "replacement": "nullptr"
+      }
+    ]
+  }
+  
