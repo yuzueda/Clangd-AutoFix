@@ -59,6 +59,14 @@ jupyter notebook Clangd-AutoFixer.ipynb
 
 ## 🧪 Experimental Setup
 
+### HumanEval-C++ Dataset
+
+Data Source Description: The HumanEval-C++ dataset utilised in this project is based upon the HumanEval-X benchmark. The original HumanEval, released by OpenAI, comprised 164 programming questions initially formulated in Python. HumanEval-X expanded this problem set by translating it into multiple programming languages, including C++.
+Original Paper: Zheng et al. ‘HumanEval-X: A Benchmark for Multilingual Code Generation’ (2023)
+GitHub Repository: https://github.com/THUDM/HumanEval-X
+
+Data Generation: We employed the StarCoder model to generate code for HumanEval-C++ problems, collecting the resulting 164 C++ files as our test dataset.
+
 ### Error Injection for Real-World Code
 
 To evaluate the framework on real-world code, use the error injection notebook:
